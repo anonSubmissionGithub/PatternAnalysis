@@ -1,0 +1,153 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>BERTopic Tree</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .tooltip {
+      position: absolute;
+      text-align: left;
+      width: auto;
+      max-width: 300px;
+      padding: 10px;
+      font: 12px sans-serif;
+      background: white;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      pointer-events: none;
+      box-shadow: 0px 0px 6px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+<svg width="1600" height="2500"></svg>
+<div id="tooltip" class="tooltip" style="opacity:0;"></div>
+<script src="https://d3js.org/d3.v6.min.js"></script>
+<script>
+const margin = {top: 20, right: 120, bottom: 20, left: 120},
+      width = 1600 - margin.right - margin.left,
+      height = 2500 - margin.top - margin.bottom;
+
+const outerSvg = d3.select("svg");
+const zoomGroup = outerSvg.append("g").attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+const zoom = d3.zoom()
+  .scaleExtent([0.5, 5])
+  .on("zoom", (event) => {
+    zoomGroup.attr("transform", event.transform);
+});
+
+outerSvg.call(zoom);
+
+const tree = d3.tree().nodeSize([40, 380]);
+const tooltip = d3.select("#tooltip");
+
+d3.json("bertopic_tree_corrected.json").then(data => {
+  const root = d3.hierarchy(data);
+  root.x0 = height / 2;
+  root.y0 = 0;
+
+  function update(source) {
+    const treeData = tree(root);
+    const nodes = treeData.descendants();
+
+    // === Adjust horizontal (y-axis) distance dynamically ===
+    nodes.forEach(d => {
+	  if (d.depth === 0) d.y = -100; 
+      if (d.depth === 1) d.y = 100;  // All Topics → Main Topics closer
+      if (d.depth === 2) d.y = 700;  // Main Topics → Subtopics farther
+    });
+    // =======================================================
+    
+    const links = treeData.links();
+
+    const node = zoomGroup.selectAll('g.node')
+      .data(nodes, d => d.id || (d.id = ++i));
+
+    const nodeEnter = node.enter().append('g')
+      .attr('class', 'node')
+      .attr("transform", d => "translate(" + d.y + "," + d.x + ")")
+      .on("click", click)
+      .on("mouseover", function(event, d) {
+        tooltip.transition().duration(200).style("opacity", 0.9);
+        tooltip.html(
+          `<strong>${d.data.name}</strong><br>
+          <em>${d.data.desc || ""}</em><br>
+          <strong>Total:</strong> ${d.data.value || 0}<br>
+          <strong>Target 1:</strong> ${d.data.target1 || 0}<br>
+          <strong>Target 0:</strong> ${d.data.target0 || 0}<br>
+          <strong>Keywords:</strong> ${(d.data.keywords || []).join(", ")}`
+        )
+        .style("left", (event.pageX + 15) + "px")
+        .style("top", (event.pageY - 28) + "px");
+      })
+      .on("mouseout", function() {
+        tooltip.transition().duration(300).style("opacity", 0);
+      });
+
+    nodeEnter.append('circle')
+      .attr('r', 6)
+      
+    .style("fill", d => {
+      if (!d.data.color) return "#ccc";
+      if (d.data.color.includes("🟥")) return "#e74c3c";
+      if (d.data.color.includes("🟨")) return "#f1c40f";
+      if (d.data.color.includes("🟩")) return "#2ecc71";
+      return "#ccc";
+    });
+    
+
+    nodeEnter.append('text')
+      .attr("dy", ".35em")
+      .attr("x", d => d.children || d._children ? -13 : 13)
+      .attr("text-anchor", d => d.children || d._children ? "end" : "start")
+      .text(d => d.data.name);
+
+    const link = zoomGroup.selectAll('path.link')
+      .data(links, d => d.target.id);
+
+    link.enter().insert('path', "g")
+      .attr("class", "link")
+      .attr("stroke", "#ccc")
+      .attr("stroke-width", 1.5)
+      .attr("fill", "none")
+      .attr('d', d => diagonal(d.source, d.target));
+
+    function diagonal(s, d) {
+      return `M ${s.y} ${s.x}
+              C ${(s.y + d.y) / 2} ${s.x},
+                ${(s.y + d.y) / 2} ${d.x},
+                ${d.y} ${d.x}`;
+    }
+
+    function click(event, d) {
+      if (d.children) {
+        d._children = d.children;
+        d.children = null;
+      } else {
+        d.children = d._children;
+        d._children = null;
+      }
+      update(d);
+    }
+  }
+
+  let i = 0;
+  update(root);
+
+  // === Center and zoom out the tree initially ===
+  outerSvg.call(
+    zoom.transform,
+    d3.zoomIdentity.translate(width / 4, 50).scale(0.8)
+  );
+  // ===============================================
+
+});
+</script>
+</body>
+</html>

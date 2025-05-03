@@ -1,0 +1,853 @@
+{
+  "name": "All Topics",
+  "children": [
+    {
+      "name": "Main Topic -1: Code Security & Validation",
+      "desc": "Code Security & Validation - General security checks and validation procedures for preventing errors in code",
+      "color": "Mixed/Neutral (\ud83d\udfe8)",
+      "keywords": [
+        "['action'",
+        "'task'",
+        "'function'",
+        "'developer'",
+        "'added'",
+        "'check'",
+        "'error'",
+        "'ensure'",
+        "'prevent'",
+        "'aimed']"
+      ],
+      "value": 272,
+      "target0": "59.56%",
+      "target1": "40.44%",
+      "children": [
+        {
+          "name": "Subtopic -1: General Code Validation",
+          "desc": "General Code Validation - Basic code validation and error handling procedures",
+          "color": "Likely Safe (\ud83d\udfe9)",
+          "keywords": [
+            "['action'",
+            "'task'",
+            "'check'",
+            "'page'",
+            "'function'",
+            "'added'",
+            "'end'",
+            "'fix'",
+            "'extents'",
+            "'ensure']"
+          ],
+          "value": 24,
+          "target0": "75%",
+          "target1": "25%"
+        },
+        {
+          "name": "Subtopic 0: Function Security",
+          "desc": "Function Security - Function-level security enhancements and error checking",
+          "color": "Mixed/Neutral (\ud83d\udfe8)",
+          "keywords": [
+            "['task'",
+            "'action'",
+            "'developer'",
+            "'function'",
+            "'added'",
+            "'check'",
+            "'ensure'",
+            "'prevent'",
+            "'code'",
+            "'error']"
+          ],
+          "value": 233,
+          "target0": "57.51%",
+          "target1": "42.49%"
+        },
+        {
+          "name": "Subtopic 1: Network Protocol Security",
+          "desc": "Network Protocol Security - Network packet validation and protocol security",
+          "color": "Likely Safe (\ud83d\udfe9)",
+          "keywords": [
+            "['packet'",
+            "'hop'",
+            "'limit'",
+            "'function'",
+            "'added'",
+            "'action'",
+            "'task'",
+            "'setting'",
+            "'check'",
+            "'pptr']"
+          ],
+          "value": 15,
+          "target0": "66.67%",
+          "target1": "33.33%"
+        }
+      ]
+    },
+    {
+      "name": "Main Topic 0: Image Processing & Memory Management",
+      "desc": "Image Processing & Memory Management - Memory allocation and management for image processing operations",
+      "color": "High Vulnerability (\ud83d\udfe5)",
+      "keywords": [
+        "['image'",
+        "'pixel'",
+        "'columns'",
+        "'width'",
+        "'color'",
+        "'images'",
+        "'number'",
+        "'bytes_per_line'",
+        "'allocation'",
+        "'sun_info']"
+      ],
+      "value": 40,
+      "target0": "35%",
+      "target1": "65%",
+      "children": [
+        {
+          "name": "Subtopic -1: Image Memory Allocation",
+          "desc": "Image Memory Allocation - Memory management for image processing",
+          "color": "High Vulnerability (\ud83d\udfe5)",
+          "keywords": [
+            "['task'",
+            "'action'",
+            "'image'",
+            "'developer'",
+            "'function'",
+            "'memory'",
+            "'allocation'",
+            "'aimed'",
+            "'check'",
+            "'error']"
+          ],
+          "value": 29,
+          "target0": "31.03%",
+          "target1": "68.97%"
+        },
+        {
+          "name": "Subtopic 0: Pixel Overflow Prevention",
+          "desc": "Pixel Overflow Prevention - Prevention of pixel buffer overflows in image processing",
+          "color": "Mixed/Neutral (\ud83d\udfe8)",
+          "keywords": [
+            "['written'",
+            "'overflow'",
+            "'color'",
+            "'function'",
+            "'pixels'",
+            "'added'",
+            "'task'",
+            "'action'",
+            "'bmp'",
+            "'npix']"
+          ],
+          "value": 6,
+          "target0": "50%",
+          "target1": "50%"
+        },
+        {
+          "name": "Subtopic 1: Image Data Validation",
+          "desc": "Image Data Validation - Validation of image data lengths and formats",
+          "color": "Mixed/Neutral (\ud83d\udfe8)",
+          "keywords": [
+            "['blob'",
+            "'image'",
+            "'length'",
+            "'data'",
+            "'exceeds'",
+            "'check'",
+            "'added'",
+            "'size'",
+            "'task'",
+            "'action']"
+          ],
+          "value": 5,
+          "target0": "40%",
+          "target1": "60%"
+        }
+      ]
+    },
+    {
+      "name": "Main Topic 1: Bounds Checking & Loop Safety",
+      "desc": "Bounds Checking & Loop Safety - Input validation and controls to prevent buffer and boundary issues",
+      "color": "Mixed/Neutral (\ud83d\udfe8)",
+      "keywords": [
+        "['size'",
+        "'loop'",
+        "'end'",
+        "'bounds'",
+        "'check'",
+        "'condition'",
+        "'exceeds'",
+        "'offset'",
+        "'action'",
+        "'task']"
+      ],
+      "value": 39,
+      "target0": "43.59%",
+      "target1": "56.41%"
+    },
+    {
+      "name": "Main Topic 2: Socket & Network Programming",
+      "desc": "Socket & Network Programming - Network socket implementation and security fixes",
+      "color": "Mixed/Neutral (\ud83d\udfe8)",
+      "keywords": [
+        "['skb'",
+        "'socket'",
+        "'sk'",
+        "'destination'",
+        "'sctp'",
+        "'removed'",
+        "'code'",
+        "'ufo'",
+        "'action'",
+        "'task']"
+      ],
+      "value": 37,
+      "target0": "56.76%",
+      "target1": "43.24%"
+    },
+    {
+      "name": "Main Topic 3: Process & File System Management",
+      "desc": "Process & File System Management - File system permissions and process isolation measures",
+      "color": "Mixed/Neutral (\ud83d\udfe8)",
+      "keywords": [
+        "['process'",
+        "'proc'",
+        "'user'",
+        "'file'",
+        "'dentry'",
+        "'pid'",
+        "'child'",
+        "'privileges'",
+        "'directory'",
+        "'root']"
+      ],
+      "value": 34,
+      "target0": "50%",
+      "target1": "50%",
+      "children": [
+        {
+          "name": "Subtopic -1: Process Directory Management",
+          "desc": "Process Directory Management - Directory access controls for processes",
+          "color": "Likely Safe (\ud83d\udfe9)",
+          "keywords": [
+            "['process'",
+            "'developer'",
+            "'action'",
+            "'task'",
+            "'proc'",
+            "'directory'",
+            "'instead'",
+            "'cred'",
+            "'aimed'",
+            "'function']"
+          ],
+          "value": 11,
+          "target0": "72.73%",
+          "target1": "27.27%"
+        },
+        {
+          "name": "Subtopic 0: User File Access Control",
+          "desc": "User File Access Control - User-level file access controls and permissions",
+          "color": "Mixed/Neutral (\ud83d\udfe8)",
+          "keywords": [
+            "['task'",
+            "'check'",
+            "'action'",
+            "'function'",
+            "'user'",
+            "'file'",
+            "'pid'",
+            "'ensure'",
+            "'added'",
+            "'current']"
+          ],
+          "value": 18,
+          "target0": "44.44%",
+          "target1": "55.56%"
+        },
+        {
+          "name": "Subtopic 1: Path Validation",
+          "desc": "Path Validation - Path traversal prevention and validation",
+          "color": "High Vulnerability (\ud83d\udfe5)",
+          "keywords": [
+            "['dentry'",
+            "'path'",
+            "'function'",
+            "'return'",
+            "'path_connected'",
+            "'nd'",
+            "'links'",
+            "'exclusive'",
+            "'files'",
+            "'verify']"
+          ],
+          "value": 5,
+          "target0": "20%",
+          "target1": "80%"
+        }
+      ]
+    },
+    {
+      "name": "Main Topic 4: Memory Management & Null Pointer Handling",
+      "desc": "Memory Management & Null Pointer Handling - Prevention of null pointer dereferences and memory leaks",
+      "color": "Mixed/Neutral (\ud83d\udfe8)",
+      "keywords": [
+        "['null'",
+        "'tty'",
+        "'disk'",
+        "'icanon'",
+        "'error'",
+        "'freed'",
+        "'extproc'",
+        "'free'",
+        "'action'",
+        "'task']"
+      ],
+      "value": 31,
+      "target0": "58.06%",
+      "target1": "41.94%"
+    },
+    {
+      "name": "Main Topic 5: Memory Initialization & Information Leakage Prevention",
+      "desc": "Memory Initialization & Information Leakage Prevention - Memory initialization to prevent data leakage",
+      "color": "Likely Safe (\ud83d\udfe9)",
+      "keywords": [
+        "['msg_namelen'",
+        "'memset'",
+        "'initialize'",
+        "'structure'",
+        "'information'",
+        "'leak'",
+        "'initialized'",
+        "'memory'",
+        "'ensuring'",
+        "'uninitialized']"
+      ],
+      "value": 31,
+      "target0": "70.97%",
+      "target1": "29.03%"
+    },
+    {
+      "name": "Main Topic 6: Concurrency & Locking Mechanisms",
+      "desc": "Concurrency & Locking Mechanisms - Thread safety, race condition prevention and proper locking",
+      "color": "Mixed/Neutral (\ud83d\udfe8)",
+      "keywords": [
+        "['lock'",
+        "'locking'",
+        "'race'",
+        "'timer'",
+        "'shm_file'",
+        "'operations'",
+        "'task'",
+        "'functions'",
+        "'ensuring'",
+        "'proper']"
+      ],
+      "value": 30,
+      "target0": "46.67%",
+      "target1": "53.33%"
+    },
+    {
+      "name": "Main Topic 7: Packet Processing & Buffer Management",
+      "desc": "Packet Processing & Buffer Management - Network packet handling and buffer validation",
+      "color": "Mixed/Neutral (\ud83d\udfe8)",
+      "keywords": [
+        "['packet'",
+        "'pkt_len'",
+        "'length'",
+        "'buffer'",
+        "'size'",
+        "'added'",
+        "'bounds'",
+        "'checks'",
+        "'prevent'",
+        "'exceed']"
+      ],
+      "value": 27,
+      "target0": "48.15%",
+      "target1": "51.85%"
+    },
+    {
+      "name": "Main Topic 8: Web Security & Content Policy",
+      "desc": "Web Security & Content Policy - Content Security Policy implementation and web security measures",
+      "color": "Mixed/Neutral (\ud83d\udfe8)",
+      "keywords": [
+        "['url'",
+        "'content'",
+        "'csp'",
+        "'policy'",
+        "'security'",
+        "'page'",
+        "'navigation'",
+        "'downloads'",
+        "'site'",
+        "'non']"
+      ],
+      "value": 24,
+      "target0": "62.5%",
+      "target1": "37.5%"
+    },
+    {
+      "name": "Main Topic 9: Integer Overflow Prevention",
+      "desc": "Integer Overflow Prevention - Detection and prevention of integer overflow vulnerabilities",
+      "color": "Mixed/Neutral (\ud83d\udfe8)",
+      "keywords": [
+        "['overflow'",
+        "'integer'",
+        "'size'",
+        "'size_max'",
+        "'allocation'",
+        "'calculation'",
+        "'buffer'",
+        "'check'",
+        "'multiplication'",
+        "'issue']"
+      ],
+      "value": 24,
+      "target0": "45.83%",
+      "target1": "54.17%"
+    },
+    {
+      "name": "Main Topic 10: Payload & Stack Validation",
+      "desc": "Payload & Stack Validation - Stack safety and payload validation mechanisms",
+      "color": "Mixed/Neutral (\ud83d\udfe8)",
+      "keywords": [
+        "['payload'",
+        "'stack'",
+        "'invalid'",
+        "'condition'",
+        "'pointer'",
+        "'checks'",
+        "'return'",
+        "'prevent'",
+        "'action'",
+        "'task']"
+      ],
+      "value": 22,
+      "target0": "50%",
+      "target1": "50%"
+    },
+    {
+      "name": "Main Topic 11: Buffer Length & Bounds Management",
+      "desc": "Buffer Length & Bounds Management - String and buffer bounds protection",
+      "color": "Likely Safe (\ud83d\udfe9)",
+      "keywords": [
+        "['buffer'",
+        "'snprintf'",
+        "'length'",
+        "'dp'",
+        "'bounds'",
+        "'size'",
+        "'nd_tcheck'",
+        "'fw_ver'",
+        "'tp'",
+        "'checks']"
+      ],
+      "value": 19,
+      "target0": "73.68%",
+      "target1": "26.32%"
+    },
+    {
+      "name": "Main Topic 12: PHP Development & Version Management",
+      "desc": "PHP Development & Version Management - PHP-specific vulnerabilities and version controls",
+      "color": "High Vulnerability (\ud83d\udfe5)",
+      "keywords": [
+        "['php'",
+        "'version'",
+        "'zval'",
+        "'zend_string'",
+        "'related'",
+        "'bug'",
+        "'changes'",
+        "'include'",
+        "'updated'",
+        "'signatures']"
+      ],
+      "value": 18,
+      "target0": "11.11%",
+      "target1": "88.89%"
+    },
+    {
+      "name": "Main Topic 13: File System & I/O Operations",
+      "desc": "File System & I/O Operations - File system operations and I/O security",
+      "color": "Mixed/Neutral (\ud83d\udfe8)",
+      "keywords": [
+        "['iovec'",
+        "'bp'",
+        "'inode'",
+        "'inodes'",
+        "'flags'",
+        "'function'",
+        "'ext4_convert_unwritten_extents_endio'",
+        "'zero'",
+        "'iov'",
+        "'logic']"
+      ],
+      "value": 18,
+      "target0": "50%",
+      "target1": "50%",
+      "children": [
+        {
+          "name": "Subtopic -1: Block Processing",
+          "desc": "Block Processing - Block processing and write operation security",
+          "color": "Likely Safe (\ud83d\udfe9)",
+          "keywords": [
+            "['bp'",
+            "'use'",
+            "'action'",
+            "'task'",
+            "'function'",
+            "'added'",
+            "'removed'",
+            "'replaced'",
+            "'write'",
+            "'hash']"
+          ],
+          "value": 7,
+          "target0": "71.43%",
+          "target1": "28.57%"
+        },
+        {
+          "name": "Subtopic 0: Inode Allocation",
+          "desc": "Inode Allocation - Secure allocation and management of inodes",
+          "color": "High Vulnerability (\ud83d\udfe5)",
+          "keywords": [
+            "['inode'",
+            "'inodes'",
+            "'new'",
+            "'flags'",
+            "'allocated'",
+            "'allocation'",
+            "'function'",
+            "'added'",
+            "'logic'",
+            "'developer']"
+          ],
+          "value": 6,
+          "target0": "33.33%",
+          "target1": "66.67%"
+        },
+        {
+          "name": "Subtopic 1: I/O Vector Operations",
+          "desc": "I/O Vector Operations - Security in I/O vector operations",
+          "color": "Mixed/Neutral (\ud83d\udfe8)",
+          "keywords": [
+            "['length'",
+            "'developer'",
+            "'function'",
+            "'zero'",
+            "'iovec'",
+            "'loop'",
+            "'action'",
+            "'task'",
+            "'iov_iter_advance'",
+            "'aimed']"
+          ],
+          "value": 5,
+          "target0": "40%",
+          "target1": "60%"
+        }
+      ]
+    },
+    {
+      "name": "Main Topic 14: Virtualization & KVM Management",
+      "desc": "Virtualization & KVM Management - Kernel Virtual Machine security and isolation",
+      "color": "Mixed/Neutral (\ud83d\udfe8)",
+      "keywords": [
+        "['guest'",
+        "'vcpu'",
+        "'kvm'",
+        "'cr4'",
+        "'x2apic'",
+        "'einval'",
+        "'bit'",
+        "'mode'",
+        "'calls'",
+        "'value']"
+      ],
+      "value": 17,
+      "target0": "47.06%",
+      "target1": "52.94%"
+    },
+    {
+      "name": "Main Topic 15: Page & Memory Mapping",
+      "desc": "Page & Memory Mapping - Memory page allocation and mapping security",
+      "color": "Mixed/Neutral (\ud83d\udfe8)",
+      "keywords": [
+        "['pages'",
+        "'page'",
+        "'bio'",
+        "'memory'",
+        "'mappings'",
+        "'iommu'",
+        "'vm_ops'",
+        "'slots'",
+        "'slot'",
+        "'rd_release_device_space']"
+      ],
+      "value": 16,
+      "target0": "56.25%",
+      "target1": "43.75%"
+    },
+    {
+      "name": "Main Topic 16: Encryption & Key Management",
+      "desc": "Encryption & Key Management - Cryptographic implementation and key security",
+      "color": "High Vulnerability (\ud83d\udfe5)",
+      "keywords": [
+        "['key'",
+        "'initialization'",
+        "'skcipher'",
+        "'encryption'",
+        "'node'",
+        "'blinding'",
+        "'skcipher_tfm'",
+        "'rule'",
+        "'crypto_skcipher'",
+        "'crypto']"
+      ],
+      "value": 16,
+      "target0": "31.25%",
+      "target1": "68.75%"
+    },
+    {
+      "name": "Main Topic 17: DOM & Document Manipulation",
+      "desc": "DOM & Document Manipulation - Document Object Model security and safe manipulation",
+      "color": "Likely Safe (\ud83d\udfe9)",
+      "keywords": [
+        "['element'",
+        "'document'",
+        "'node'",
+        "'setfocusedelementdone'",
+        "'selection'",
+        "'frame'",
+        "'test'",
+        "'blinkgenpropertytreesenabled'",
+        "'nodechildrenwillberemoved'",
+        "'mutation']"
+      ],
+      "value": 13,
+      "target0": "69.23%",
+      "target1": "30.77%"
+    },
+    {
+      "name": "Main Topic 18: String & Path Processing",
+      "desc": "String & Path Processing - String handling and path traversal prevention",
+      "color": "Mixed/Neutral (\ud83d\udfe8)",
+      "keywords": [
+        "['length'",
+        "'search'",
+        "'variable'",
+        "'len'",
+        "'pascal'",
+        "'path'",
+        "'string'",
+        "'litlen'",
+        "'eliding'",
+        "'kdialogwidth']"
+      ],
+      "value": 12,
+      "target0": "50%",
+      "target1": "50%"
+    },
+    {
+      "name": "Main Topic 19: Object Response Handling",
+      "desc": "Object Response Handling - Object handling and response validation",
+      "color": "Mixed/Neutral (\ud83d\udfe8)",
+      "keywords": [
+        "['obj'",
+        "'response'",
+        "'allowclosingdoctype'",
+        "'scriptstate'",
+        "'ret'",
+        "'assert'",
+        "'initresp'",
+        "'isdocument'",
+        "'executioncontext'",
+        "'isfunction']"
+      ],
+      "value": 11,
+      "target0": "45.45%",
+      "target1": "54.55%"
+    },
+    {
+      "name": "Main Topic 20: Memory Allocation Strategies",
+      "desc": "Memory Allocation Strategies - Memory allocation security for stack and heap",
+      "color": "Mixed/Neutral (\ud83d\udfe8)",
+      "keywords": [
+        "['stack'",
+        "'allocated'",
+        "'buffer'",
+        "'memory'",
+        "'kmalloc'",
+        "'buffers'",
+        "'dma'",
+        "'usb'",
+        "'heap'",
+        "'allocation']"
+      ],
+      "value": 11,
+      "target0": "63.64%",
+      "target1": "36.36%"
+    },
+    {
+      "name": "Main Topic 21: File Handling & Error Management",
+      "desc": "File Handling & Error Management - File operation error handling and DoS prevention",
+      "color": "High Vulnerability (\ud83d\udfe5)",
+      "keywords": [
+        "['pb'",
+        "'eof'",
+        "'avio_feof'",
+        "'denial'",
+        "'averror_invaliddata'",
+        "'end'",
+        "'dos'",
+        "'file'",
+        "'file_name'",
+        "'sparing']"
+      ],
+      "value": 10,
+      "target0": "20%",
+      "target1": "80%"
+    },
+    {
+      "name": "Main Topic 22: Buffer Size & Chunk Processing",
+      "desc": "Buffer Size & Chunk Processing - Buffer and chunk size validation",
+      "color": "Mixed/Neutral (\ud83d\udfe8)",
+      "keywords": [
+        "['1024'",
+        "'buffer'",
+        "'caf_chunk_header'",
+        "'mchunksize'",
+        "'aligned'",
+        "'invalid'",
+        "'chunk'",
+        "'compressed_size'",
+        "'wavpack_soft_error'",
+        "'journal_unmap_buffer']"
+      ],
+      "value": 10,
+      "target0": "40%",
+      "target1": "60%"
+    },
+    {
+      "name": "Main Topic 23: CPU Context & Mode Management",
+      "desc": "CPU Context & Mode Management - CPU context and mode manipulation security",
+      "color": "Likely Safe (\ud83d\udfe9)",
+      "keywords": [
+        "['ctxt'",
+        "'tlb'",
+        "'efer_lma'",
+        "'efer'",
+        "'mode'",
+        "'tiocgetd'",
+        "'vma'",
+        "'removed'",
+        "'discipline'",
+        "'segmented_write_std']"
+      ],
+      "value": 9,
+      "target0": "66.67%",
+      "target1": "33.33%"
+    },
+    {
+      "name": "Main Topic 24: Profile & Configuration Validation",
+      "desc": "Profile & Configuration Validation - User profile and configuration validation",
+      "color": "Likely Safe (\ud83d\udfe9)",
+      "keywords": [
+        "['profile'",
+        "'getrouter'",
+        "'invalid'",
+        "'positive'",
+        "'fail'",
+        "'unit_size'",
+        "'atom'",
+        "'gamma'",
+        "'router'",
+        "'false']"
+      ],
+      "value": 8,
+      "target0": "75%",
+      "target1": "25%"
+    },
+    {
+      "name": "Main Topic 25: Binary Analysis & Crash Prevention",
+      "desc": "Binary Analysis & Crash Prevention - ELF binary analysis and crash prevention",
+      "color": "Mixed/Neutral (\ud83d\udfe8)",
+      "keywords": [
+        "['crash'",
+        "'elf'",
+        "'sdk'",
+        "'version'",
+        "'verdef'",
+        "'compiler_result'",
+        "'annotations'",
+        "'yyparse'",
+        "'vn_aux'",
+        "'vd_aux']"
+      ],
+      "value": 7,
+      "target0": "57.14%",
+      "target1": "42.86%"
+    },
+    {
+      "name": "Main Topic 26: Bit Manipulation & Register Operations",
+      "desc": "Bit Manipulation & Register Operations - Register size and bit manipulation security",
+      "color": "High Vulnerability (\ud83d\udfe5)",
+      "keywords": [
+        "['bit'",
+        "'32'",
+        "'64'",
+        "'alu'",
+        "'coerce_reg_to_size'",
+        "'operation'",
+        "'immediate'",
+        "'sign'",
+        "'signed'",
+        "'incorrect']"
+      ],
+      "value": 6,
+      "target0": "0%",
+      "target1": "100%"
+    },
+    {
+      "name": "Main Topic 27: String Length & Instruction Handling",
+      "desc": "String Length & Instruction Handling - String length validation for embedded systems",
+      "color": "High Vulnerability (\ud83d\udfe5)",
+      "keywords": [
+        "['begin'",
+        "'avr'",
+        "'str'",
+        "'length'",
+        "'instruction'",
+        "'lds'",
+        "'plen'",
+        "'crash'",
+        "'len'",
+        "'early']"
+      ],
+      "value": 5,
+      "target0": "20%",
+      "target1": "80%"
+    },
+    {
+      "name": "Main Topic 28: Memory Safety & Access Control",
+      "desc": "Memory Safety & Access Control - Memory access controls and safety checks",
+      "color": "High Vulnerability (\ud83d\udfe5)",
+      "keywords": [
+        "['ent1'",
+        "'wddx_deserialize'",
+        "'bug'",
+        "'tsrmls_cc'",
+        "'atts'",
+        "'new_str'",
+        "'access'",
+        "'illegal'",
+        "'memory'",
+        "'safety']"
+      ],
+      "value": 5,
+      "target0": "0%",
+      "target1": "100%"
+    }
+  ]
+}
